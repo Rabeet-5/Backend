@@ -1,13 +1,12 @@
 const express = require('express')
 const app = express()
 const env = require('dotenv')
-
 const http = require('http')
-
 const server = http.createServer((req,res)=>{
     console.log('Server started')
 })
 server.listen(4000,()=>console.log('Server is started'))
+
 
 const StudentRoute = require('./Route/route')
 const moongoose = require('mongoose')
